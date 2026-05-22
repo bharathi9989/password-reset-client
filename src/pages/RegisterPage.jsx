@@ -22,7 +22,7 @@ function RegisterPage() {
 
     try {
       setLoading(true);
-      const res = await API.post("/api/auth/register", form);
+      const res = await API.post("/auth/register", form);
 
       setStatus({ type: "success", message: res.data.message });
 

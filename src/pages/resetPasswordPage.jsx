@@ -4,7 +4,7 @@ import Input from "../components/Input.jsx";
 import Button from "../components/Button.jsx";
 import Toast from "../components/Toast.jsx";
 import Loader from "../components/Loader.jsx";
-import API from "../lib/api";
+import API from "../lib/api.jsx";
 
 function ResetPasswordPage() {
   const { token } = useParams();
