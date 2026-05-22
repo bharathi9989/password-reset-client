@@ -1,7 +1,8 @@
-import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import ResetPasswordPage from "./pages/resetPasswordPage.jsx";
-import ForgotPasswordPage from "./pages/forgotPasswordPage.jsx";
+import RegisterPage from "./pages/RegisterPage";
+import LoginPage from "./pages/LoginPage";
+import ForgotPasswordPage from "./pages/forgotPasswordPage";
+import ResetPasswordPage from "./pages/resetPasswordPage";
 
 function App() {
   return (

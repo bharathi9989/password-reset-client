@@ -22,7 +22,7 @@ function LoginPage() {
 
     try {
       setLoading(true);
-      const res = await API.post("/api/auth/login", form);
+      const res = await API.post("/auth/login", form);
 
       setStatus({ type: "success", message: res.data.message });
 

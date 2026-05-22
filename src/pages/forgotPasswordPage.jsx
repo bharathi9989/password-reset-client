@@ -4,8 +4,6 @@ import Toast from "../components/Toast.jsx";
 import Button from "../components/Button.jsx";
 import API from "../lib/api.jsx";
 
-
-
 function ForgotPasswordPage() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
