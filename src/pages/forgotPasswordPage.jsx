@@ -2,7 +2,7 @@ import { useState } from "react";
 import Input from "../components/Input.jsx";
 import Toast from "../components/Toast.jsx";
 import Button from "../components/Button.jsx";
-import API from "../lib/api.jsx";
+import API from "../lib/api";
 
 function ForgotPasswordPage() {
   const [email, setEmail] = useState("");
@@ -20,7 +20,8 @@ function ForgotPasswordPage() {
 
     try {
       setLoading(true);
-      const res = await API.post("/auth/forgot-password", { email });
+      console.log("BUTTON CLICKED");
+      const res = await API.post("auth/forgot-password", { email });
       setStatus({ type: "success", message: res.data.message });
     } catch {
       setStatus({
