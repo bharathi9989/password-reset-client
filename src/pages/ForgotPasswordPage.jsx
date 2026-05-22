@@ -2,7 +2,7 @@ import { useState } from "react";
 import Input from "../components/Input.jsx";
 import Toast from "../components/Toast.jsx";
 import Button from "../components/Button.jsx";
-import API from "../lib/api";
+import API from "../lib/api.js";
 
 function ForgotPasswordPage() {
   const [email, setEmail] = useState("");
